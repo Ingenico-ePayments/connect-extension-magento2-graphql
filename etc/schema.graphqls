@@ -1,0 +1,12 @@
+type Query {
+    ingenicoClientSession: ingenicoClientSession @resolver(class: "Ingenico\\ConnectGraphQl\\Model\\Resolver\\ingenicoClientSession") @doc(description: "Create a client session with Ingenico") @cache(cacheable: false)
+}
+
+type ingenicoClientSession @doc(description: "Ingenico Client Session") {
+    assetUrl: String @doc(description: "The datacenter-specific base url for assets. This value needs to be passed to the Client SDK to make sure that the client software connects to the right datacenter.")
+    clientApiUrl: String @doc(description: "The datacenter-specific base url for client requests. This value needs to be passed to the Client SDK to make sure that the client software connects to the right datacenter.")
+    clientSessionId: String @doc(description: "The identifier of the session that has been created.")
+    customerId: String @doc(description: "The session is build up around the customer in the form of the customerId. All of the Client APIs use this customerId in the URI to identify the customer.")
+    invalidTokens: [String] @doc(description: "Tokens that are submitted in the request are validated. In case any of the tokens can't be used anymore they are returned in this array. You should most likely remove those tokens from your system.")
+    region: String
+}

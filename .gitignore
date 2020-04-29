@@ -1,0 +1,6 @@
+.idea/
+/vendor/
+release/
+archive/
+composer.lock
+.DS_Store
