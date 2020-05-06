@@ -1,8 +1,8 @@
 type Query {
-    ingenicoClientSession: ingenicoClientSession @resolver(class: "Ingenico\\ConnectGraphQl\\Model\\Resolver\\ingenicoClientSession") @doc(description: "Create a client session with Ingenico") @cache(cacheable: false)
+    ingenicoClientSession: IngenicoClientSession @resolver(class: "Ingenico\\ConnectGraphQl\\Model\\Resolver\\IngenicoClientSession") @doc(description: "Create a client session with Ingenico") @cache(cacheable: false)
 }
 
-type ingenicoClientSession @doc(description: "Ingenico Client Session") {
+type IngenicoClientSession @doc(description: "Ingenico Client Session") {
     assetUrl: String @doc(description: "The datacenter-specific base url for assets. This value needs to be passed to the Client SDK to make sure that the client software connects to the right datacenter.")
     clientApiUrl: String @doc(description: "The datacenter-specific base url for client requests. This value needs to be passed to the Client SDK to make sure that the client software connects to the right datacenter.")
     clientSessionId: String @doc(description: "The identifier of the session that has been created.")
