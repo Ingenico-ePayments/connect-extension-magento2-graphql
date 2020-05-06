@@ -1,5 +1,5 @@
 {
-  "name": "ingenico/connect-extension-magento2-graphql",
+  "name": "ingenico-epayments/connect-extension-magento2-graphql",
   "description": "GraphQL support for the Ingenico Connect Magento 2 Module",
   "type": "magento2-module",
   "license": "MIT",
@@ -16,5 +16,5 @@
       "Ingenico\\ConnectGraphQl\\": ""
     }
   },
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

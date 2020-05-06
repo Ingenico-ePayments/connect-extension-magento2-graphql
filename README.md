@@ -11,6 +11,12 @@ not work as expected but that it's public API is not definitive yet.**
 This module adds an option to GraphQl to generate a [consumer session](https://epayments-api.developer-ingenico.com/s2sapi/v1/en_US/java/sessions/create.html) 
 that you can use with the [Ingenico mobile and browser SDK's](https://epayments.developer-ingenico.com/documentation/sdk/mobile/).
 
+## Installation instructions
+
+This module can be installed using Composer:
+
+    composer require ingenico-epayments/connect-extension-magento2-graphql
+
 ## Example
 
 The following GraphQl query will create a consumer session with Ingenico:
