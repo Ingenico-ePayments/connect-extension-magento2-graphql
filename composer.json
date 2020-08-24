@@ -6,6 +6,7 @@
   "require": {
     "ext-json": "*",
     "ingenico-epayments/connect-extension-magento2": "^2.2",
+    "magento/module-quote-graph-ql": "100.*",
     "webonyx/graphql-php": "^0.13.8"
   },
   "autoload": {
@@ -16,5 +17,5 @@
       "Ingenico\\ConnectGraphQl\\": ""
     }
   },
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
